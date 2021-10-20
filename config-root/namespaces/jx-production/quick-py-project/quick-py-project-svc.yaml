@@ -1,0 +1,20 @@
+# Source: quick-py-project/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: quick-py-project
+  labels:
+    chart: "quick-py-project-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'quick-py-project'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: quick-py-project-quick-py-project

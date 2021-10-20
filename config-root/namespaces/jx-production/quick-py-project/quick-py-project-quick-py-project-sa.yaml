@@ -1,0 +1,10 @@
+# Source: quick-py-project/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: quick-py-project-quick-py-project
+  annotations:
+    meta.helm.sh/release-name: 'quick-py-project'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
