@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.18.203.76.151.nip.io
+releases:
+- chart: dev/quick-py-project
+  version: 0.0.1
+  name: quick-py-project
+templates: {}
+renderedvalues: {}
