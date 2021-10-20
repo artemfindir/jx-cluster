@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: quick-py-project
   labels:
-    chart: "quick-py-project-0.0.1"
+    chart: "quick-py-project-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'quick-py-project'
