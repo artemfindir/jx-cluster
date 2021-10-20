@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        ait-af-bot/quick-py-project: true
         artemfindir/jx-cluster: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        ait-af-bot/quick-py-project: merge
         artemfindir/jx-cluster: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - artemfindir/jx-cluster
+        - ait-af-bot/quick-py-project
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - artemfindir/jx-cluster
+        - ait-af-bot/quick-py-project
       target_url: http://lighthouse-jx.18.203.76.151.nip.io/merge/status
 kind: ConfigMap
 metadata:

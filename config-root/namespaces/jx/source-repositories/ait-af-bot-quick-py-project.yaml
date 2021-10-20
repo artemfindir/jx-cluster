@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ait-af-bot
+    provider: github
+    repository: quick-py-project
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ait-af-bot-quick-py-project
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/ait-af-bot/quick-py-project.git
+  org: ait-af-bot
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: quick-py-project
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/ait-af-bot/quick-py-project
