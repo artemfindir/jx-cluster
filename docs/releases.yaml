@@ -202,13 +202,13 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-10-20T13:12:54Z"
+    firstDeployed: "2021-10-20T16:44:57Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2021-10-20T13:12:54Z"
+    lastDeployed: "2021-10-20T16:44:57Z"
     name: quick-py-project
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.18.203.76.151.nip.io
     resourcePath: config-root/namespaces/jx-staging/quick-py-project
-    version: 0.0.1
+    version: 0.0.2
