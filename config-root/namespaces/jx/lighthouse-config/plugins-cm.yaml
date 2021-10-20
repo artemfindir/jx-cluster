@@ -6,6 +6,10 @@ data:
       repos:
       - artemfindir/jx-cluster
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - ait-af-bot/quick-py-project
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      ait-af-bot/quick-py-project:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       artemfindir/jx-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +35,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      ait-af-bot/quick-py-project:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       artemfindir/jx-cluster:
       - config-updater
       - approve
@@ -55,6 +80,11 @@ data:
     - repos:
       - artemfindir/jx-cluster
       trusted_org: todo
+    - repos:
+      - ait-af-bot/quick-py-project
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
