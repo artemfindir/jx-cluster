@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: quick-php-hello
   labels:
-    chart: "quick-php-hello-0.0.2"
+    chart: "quick-php-hello-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'quick-php-hello'
