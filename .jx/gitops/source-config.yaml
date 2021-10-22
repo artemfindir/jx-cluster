@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: af-jx-java-clock
+    - name: quick-php
     - name: quick-py-project
     scheduler: in-repo
   slack:
