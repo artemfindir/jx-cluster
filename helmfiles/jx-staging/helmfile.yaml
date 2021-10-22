@@ -9,7 +9,7 @@ repositories:
   url: http://chartmuseum-jx.18.203.76.151.nip.io
 releases:
 - chart: dev/quick-py-project
-  version: 0.0.2
+  version: 0.0.3
   name: quick-py-project
   values:
   - jx-values.yaml
