@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: af-jx-java-clock
     - name: quick-php
+    - name: quick-php-project
     - name: quick-py-project
     scheduler: in-repo
   slack:
