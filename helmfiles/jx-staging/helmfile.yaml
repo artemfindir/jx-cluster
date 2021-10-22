@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.52.50.49.208.nip.io
+releases:
+- chart: dev/quick-php-hello
+  version: 0.0.1
+  name: quick-php-hello
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
