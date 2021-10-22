@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ait-af-bot
+    provider: github
+    repository: af-jx-java-clock
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ait-af-bot-af-jx-java-clock
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/ait-af-bot/af-jx-java-clock.git
+  org: ait-af-bot
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: af-jx-java-clock
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/ait-af-bot/af-jx-java-clock
