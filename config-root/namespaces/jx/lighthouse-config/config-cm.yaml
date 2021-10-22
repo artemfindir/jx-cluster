@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - artemfindir/jx-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.52.50.49.208.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
