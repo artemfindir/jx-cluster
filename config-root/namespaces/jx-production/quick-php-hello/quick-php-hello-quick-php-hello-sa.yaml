@@ -1,0 +1,10 @@
+# Source: quick-php-hello/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: quick-php-hello-quick-php-hello
+  annotations:
+    meta.helm.sh/release-name: 'quick-php-hello'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

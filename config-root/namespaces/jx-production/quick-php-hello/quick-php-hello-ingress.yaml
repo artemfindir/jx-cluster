@@ -1,0 +1,22 @@
+# Source: quick-php-hello/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'quick-php-hello'
+  name: quick-php-hello
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: quick-php-hello
+                port:
+                  number: 80
+      host: quick-php-hello-jx-production.52.50.49.208.nip.io
