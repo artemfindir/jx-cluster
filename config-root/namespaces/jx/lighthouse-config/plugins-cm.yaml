@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - ait-af-bot/quick-php
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - ait-af-bot/quick-py-project
       require_self_approval: true
     cat: {}
@@ -25,6 +29,11 @@ data:
           name: plugins
     external_plugins:
       ait-af-bot/af-jx-java-clock:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      ait-af-bot/quick-php:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -45,6 +54,22 @@ data:
     owners: {}
     plugins:
       ait-af-bot/af-jx-java-clock:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      ait-af-bot/quick-php:
       - approve
       - assign
       - blunderbuss
@@ -107,6 +132,9 @@ data:
       trusted_org: todo
     - repos:
       - ait-af-bot/af-jx-java-clock
+      trusted_org: todo
+    - repos:
+      - ait-af-bot/quick-php
       trusted_org: todo
     - repos:
       - ait-af-bot/quick-py-project

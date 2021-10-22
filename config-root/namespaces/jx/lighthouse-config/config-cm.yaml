@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         ait-af-bot/af-jx-java-clock: true
+        ait-af-bot/quick-php: true
         ait-af-bot/quick-py-project: true
         artemfindir/jx-cluster: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         ait-af-bot/af-jx-java-clock: merge
+        ait-af-bot/quick-php: merge
         ait-af-bot/quick-py-project: merge
         artemfindir/jx-cluster: merge
       queries:
@@ -36,6 +38,7 @@ data:
         repos:
         - artemfindir/jx-cluster
         - ait-af-bot/af-jx-java-clock
+        - ait-af-bot/quick-php
         - ait-af-bot/quick-py-project
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - artemfindir/jx-cluster
         - ait-af-bot/af-jx-java-clock
+        - ait-af-bot/quick-php
         - ait-af-bot/quick-py-project
       target_url: http://lighthouse-jx.18.203.76.151.nip.io/merge/status
 kind: ConfigMap
