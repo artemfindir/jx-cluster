@@ -5,7 +5,7 @@ metadata:
   name: quick-py-project-quick-py-project
   labels:
     draft: draft-app
-    chart: "quick-py-project-0.0.1"
+    chart: "quick-py-project-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'quick-py-project'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: quick-py-project-quick-py-project
       containers:
         - name: quick-py-project
-          image: "289636418460.dkr.ecr.eu-west-1.amazonaws.com/ait-af-bot/quick-py-project:0.0.1"
+          image: "289636418460.dkr.ecr.eu-west-1.amazonaws.com/ait-af-bot/quick-py-project:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.3
           envFrom: null
           ports:
             - name: http
