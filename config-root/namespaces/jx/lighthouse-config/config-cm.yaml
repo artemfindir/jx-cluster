@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        ait-af-bot/imported-java-example: true
         ait-af-bot/quick-php-hello: true
         artemfindir/jx-cluster: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        ait-af-bot/imported-java-example: merge
         ait-af-bot/quick-php-hello: merge
         artemfindir/jx-cluster: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - artemfindir/jx-cluster
+        - ait-af-bot/imported-java-example
         - ait-af-bot/quick-php-hello
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - artemfindir/jx-cluster
+        - ait-af-bot/imported-java-example
         - ait-af-bot/quick-php-hello
       target_url: http://lighthouse-jx.52.50.49.208.nip.io/merge/status
 kind: ConfigMap

@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - ait-af-bot/imported-java-example
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - ait-af-bot/quick-php-hello
       require_self_approval: true
     cat: {}
@@ -20,6 +24,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      ait-af-bot/imported-java-example:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       ait-af-bot/quick-php-hello:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -35,6 +44,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      ait-af-bot/imported-java-example:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       ait-af-bot/quick-php-hello:
       - approve
       - assign
@@ -79,6 +104,9 @@ data:
     triggers:
     - repos:
       - artemfindir/jx-cluster
+      trusted_org: todo
+    - repos:
+      - ait-af-bot/imported-java-example
       trusted_org: todo
     - repos:
       - ait-af-bot/quick-php-hello
