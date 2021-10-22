@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: imported-java-example
     - name: quick-php-hello
     scheduler: in-repo
   slack:
