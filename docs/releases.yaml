@@ -202,13 +202,13 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-10-22T11:19:37Z"
+    firstDeployed: "2021-10-22T11:32:25Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2021-10-22T11:19:37Z"
+    lastDeployed: "2021-10-22T11:32:25Z"
     name: quick-php-hello
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.52.50.49.208.nip.io
     resourcePath: config-root/namespaces/jx-staging/quick-php-hello
-    version: 0.0.1
+    version: 0.0.2
