@@ -5,7 +5,7 @@ metadata:
   name: quick-php-hello-quick-php-hello
   labels:
     draft: draft-app
-    chart: "quick-php-hello-0.0.2"
+    chart: "quick-php-hello-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'quick-php-hello'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: quick-php-hello-quick-php-hello
       containers:
         - name: quick-php-hello
-          image: "289636418460.dkr.ecr.eu-west-1.amazonaws.com/ait-af-bot/quick-php-hello:0.0.2"
+          image: "289636418460.dkr.ecr.eu-west-1.amazonaws.com/ait-af-bot/quick-php-hello:0.0.4"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.4
           envFrom: null
           ports:
             - name: http
