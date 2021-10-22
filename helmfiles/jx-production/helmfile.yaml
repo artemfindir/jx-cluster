@@ -9,7 +9,7 @@ repositories:
   url: http://chartmuseum-jx.52.50.49.208.nip.io
 releases:
 - chart: dev/quick-php-hello
-  version: 0.0.2
+  version: 0.0.4
   name: quick-php-hello
   values:
   - jx-values.yaml
